@@ -220,9 +220,94 @@
 #print(a.union(b,c))
 
 
-name = 'Yurii'
-age = 32
+#name = 'Yurii'
+#age = 32
+#
+#print ('Hello, {}. You are {} years old.'.format(name,age))
+##OR
+#print(f'Hello {name}. You are {age} years old.')
 
-print ('Hello, {}. You are {} years old.'.format(name,age))
-#OR
-print(f'Hello {name}. You are {age} years old.')
+#my_list = [2024, 3.12]
+#some_data = ['Python']
+#my_list.extend(some_data)
+#my_list.insert(1, 'Python')
+#my_list.reverse()
+#print (my_list)
+
+
+##format print wxamples
+#name = 'Alice'
+#age = 30
+#
+#message = f'My name is {name}. I am {age/2} years old'
+#print(message)
+#
+#print(f'My name is {name}. I am {age/2} years old')
+#
+#message = 'Test 2. My name is {}. I am {} years old'.format(name, age)
+#print(message)
+#
+#message = 'Test 3. My name is %s. I am %d years old' % (name, age)
+#print(message)
+#
+#message = 'Test 4. My name is ' + name + '. I am ' + str(age) + ' years old'
+#print(message)
+
+#age = 25.6
+#print(age, type(age))
+#
+#age = int(age)
+#print(age, type(age))
+#
+#age = float(age)
+#print(age, type(age))
+
+#Приклад програми обчислення точної кількості цілих і дробних частин математичного рівняння на прикладі 
+#суми інтернет замовлень
+#bill_one = 34.34
+#bill_two = 12.01
+#bill_three = 17.42
+#bill_four = 4.93
+#
+#final_bill =  bill_one + bill_two + bill_three + bill_four
+#
+#dollars = int(final_bill)
+#cents = int((final_bill - int(final_bill)) * 100)
+#'''
+#Пояснення формули - в середині дужок одне із значень переводиться у ціле число через що воно втрачає свою
+#дробову частину. У результаті ми отримуємо 68.7-68 = 0.7 Далі це число множиться на 100 і його клас 
+#змінюється на інт 0.7*100 = 70
+#'''
+#print(f"Total Price {final_bill}",f"Dollars {dollars}",f"Cents {cents}",sep='\n')
+
+##Перевірка рівності та ідентичності значень
+#s1='Hello World!'
+#s2='Hello ' + 'World!'
+#
+#print(s1==s2)
+#print(s1 is s2)
+#
+#print(id(s1))
+#print(id(s2))
+
+#Скласти програму визначення номера під'їзду та поверху квартири за заданим номером квартири. 
+#У будинку 5 поверхів і 4 квартири на поверсі.
+#FLOORS = 5
+#APARTMENTS_PER_FLOOR = 4
+#
+#apartment_number = int(input('Enter apartment number: '))
+#apartments_per_entrance = FLOORS * APARTMENTS_PER_FLOOR
+#entrance_number = (apartment_number - 1) // apartments_per_entrance + 1
+#floor_number = ((apartment_number - 1) % apartments_per_entrance) // APARTMENTS_PER_FLOOR + 1
+#print(f"Entrance number {entrance_number}, Floor number {floor_number}")
+
+#print((1-1)//20=1)
+#print (((42-1)%20) // 4 +1)
+
+num1 = int(input('Please enter your number: '))
+if num1 > 0:
+    print(f'Your number {num1} is positive')
+elif num1<0:
+    print(f'Your number {num1} is negative')
+else:
+    print(f'Your number is 0')
