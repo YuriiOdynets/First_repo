@@ -304,10 +304,100 @@
 #print((1-1)//20=1)
 #print (((42-1)%20) // 4 +1)
 
-num1 = int(input('Please enter your number: '))
-if num1 > 0:
-    print(f'Your number {num1} is positive')
-elif num1<0:
-    print(f'Your number {num1} is negative')
-else:
-    print(f'Your number is 0')
+#num1 = int(input('Please enter your number: '))
+#if num1 > 0:
+#    print(f'Your number {num1} is positive')
+#elif num1<0:
+#    print(f'Your number {num1} is negative')
+#else:
+#    print(f'Your number is 0')
+
+#a={}
+#b={1,1}
+#c=()
+#d=[]
+#print(type(a))
+#print(type(b))
+#print(type(c))
+#print(type(d))
+
+
+#x = int(input('Please enter x coordinate: '))
+#y = int(input('Please enter y coordinate: '))
+#
+#point = (x,y)
+#
+#match point:
+#    case (0, 0):
+#        print("Точка в центрі координат")  
+#    case (0, y):
+#        print(f"Точка лежить на осі Y: y={y}")  
+#    case (x, 0):
+#        print(f"Точка лежить на осі X: x={x}") 
+#    case (x, y):
+#        print(f"Точка має координати:  x={x}, y={y}") 
+#    case _:
+#        print("Це не точка")
+
+#l1 = [1,2,3]
+#l2=['word1','word2', 'word3','word4']
+#for a, b in zip(l1,l2):
+#    print(a,b)
+
+#val = '4'
+#try:
+#    val = int(val)
+#except ValueError:
+#    print(f"val {val} is not a number")
+#else:
+#    print(f'entered number: {val} is valid digit?', f'Yes it is {val > 0}', sep='\n')
+#finally:
+#    print("This will be printed anyway")
+
+#def add_numbers(num1: int, num2: int) -> int:
+#    sum = num1 + num2
+#    return sum
+#
+#result = add_numbers(5, 10)
+#print(result)  # Виведе: 15
+
+##function for character convertion in to ASCII format and further print where each consicutive pair is printed in new line. 
+##pay attention to print constraction since:
+##   [f'{key}: {value}' for key, value in my_dict.items()] generates a list of strings, each containing a key-value pair.
+##   * unpacks the list so that each string becomes a separate argument to print().
+##   sep='\n' specifies that each argument should be separated by a newline character, causing each key-value pair to be printed on a 
+##   new line.
+#def string_to_codes (string: str) -> dict:
+#    codes = {'character':'code'}
+#    for q in string:
+#        if q not in codes:
+#            codes[q] = ord(q)
+#    return(codes)
+#
+#result = string_to_codes('My name is Yurii')
+#print (*[f'{key}:{value}' for key, value in result.items()], sep = '\n')
+
+
+
+
+#def factorial(n):
+#    print("Виклик функції factorial з n = ", n)
+#    if n == 1:
+#        print("Базовий випадок, n = 1, повернення 1")
+#        return 1
+#    else:
+#        result = n * factorial(n-1)
+#        print("Повернення результату для n = ", n, ": ", result)
+#        return result
+#
+#print(factorial(5))
+
+
+#try:
+#    x = int(input('Please enter your digit: '))
+#    if x %2 ==0:
+#        print (f'Your digit {x}, is even.')
+#    else:
+#        print(f'Your digit {x}, is odd')
+#except ValueError:
+#    print(f'{x} is not a digit! Please enter valid digit: ')
