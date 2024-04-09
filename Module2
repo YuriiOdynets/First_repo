@@ -100,3 +100,75 @@
 #print (f'Total character number: {total_ch}')
 #print (f'Total space number {space_count}')
 
+##Приклад використання команди break
+#a = 0
+#while True:
+#    print(a)
+#    if a >= 20:
+#        break
+#    a = a + 1
+
+##Приклад використання команди continue
+#a=0
+#while a<6:
+#    a=a+1
+#    if not a %2:
+#        continue
+#    print (a)
+
+
+##Приклади використання функції range
+#for i in range(11):
+#    print(i, end = ' ')
+#for i in range(5,11):
+#    print(i, end = ' ')
+#for i in range(0,11,2):
+#    print(i, end = ' ')
+
+## Приклад перебору словників по парах 
+#dict = {1:'one', 2:'two',3:'three'}
+#
+## Замість a i b може прийматись будьякі назви. Вони прирівнюються до ключа та значення відповідно у заданому словнику.
+#for a,b in dict.items():
+#    print (a,b)
+
+#try:
+#    value_a = input("Enter value a: ")
+#    value_b = input("Enter value b: ")
+#
+#    value_x = -value_a/value_b
+#except TypeError:
+#    print("Type Error exception block")
+#    try:
+#        value_x = -float(value_a)/float(value_b)
+#    except ValueError:
+#        print("Error!!! could not convert string to float")
+#    except ZeroDivisionError:
+#        print("Could not divide by zero")
+#    else:
+#        print(f'Result X equal {round(value_x, 2)}')
+#else:
+#    print(f'Result X equal {round(value_x, 2)}')
+#finally:
+#    print('End of calculation')
+
+##Приклад коду що приймає рядок через інпут та перетворює кожен символ у код з подальшим виводом результату у вигляді пар з нового рядка
+#string = str(input('Please enter your text: '))
+#def string_to_codes(string: str) -> dict:
+#    codes = {}
+#    for ch in string:
+#        if ch not in codes:
+#            codes [ch] = ord(ch)
+#    return codes
+#result = string_to_codes(string)
+#for key,value in result.items():
+#    print(f'{key}: {value}')
+
+
+#num = int(input("Enter the integer (0 to 100): "))
+#sum = 0
+#
+#while num > 0:
+#    sum=num+sum 
+#    num=num-1
+#print (sum)

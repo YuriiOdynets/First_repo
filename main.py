@@ -401,3 +401,32 @@
 #        print(f'Your digit {x}, is odd')
 #except ValueError:
 #    print(f'{x} is not a digit! Please enter valid digit: ')
+
+#def discount_price(price, discount):
+#    def apply_discount():
+#        nonlocal price
+#        Price = price*(1-discount)
+#    apply_discount()
+#
+#    
+#        
+#
+#    
+#    return price
+
+#def get_fullname (first_name, last_name, middle_name=""):
+#    if middle_name :
+#        print (f'{first_name} {last_name}')
+#    else:
+#        print (f'{first_name} {middle_name} {last_name}')
+#
+#get_fullname('Petro','Zaliznyak')
+
+def format_string(string:str, length:int)->str:
+    if len(string)>=length:
+        return print(string)
+    else:
+        return ' ' * (length - len(string) // 2) + string + ' ' * (length - len(string) // 2)
+
+format_string('hello',20)
+print(format_string)
