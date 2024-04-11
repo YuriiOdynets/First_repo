@@ -172,3 +172,44 @@
 #    sum=num+sum 
 #    num=num-1
 #print (sum)
+
+#def format_string(string:str, length:int):
+#    if len(string)<length:
+#        spaces = ' '*((length-len(string))//2)
+#        return print(spaces+string+spaces)
+#    else:
+#        return print(string)
+#format_string('My name', 20)
+
+
+#def format_string(string:str, length:int):
+#    if len(string)<length:
+#        spaces = ' '*((length - len(string)) // 2)
+#        return spaces+string
+#    else:
+#        return string
+#    
+#format_string('Hello', 20)
+
+#def factorial(n):
+#    if n < 2:
+#        return 1
+#    else:
+#        return n * factorial(n - 1)
+#
+#
+#def number_of_groups(n, k)->int:
+#    total_num = factorial(n)/(factorial(n-k)*factorial(k))
+#    return int(total_num)
+#
+#print(number_of_groups(14,7))
+
+
+def format_string(string:str, length:int):
+    if len(string)<length:
+        spaces = ' '*((length - len(string)) // 2)
+        return spaces+string
+    else:
+        return string
+    
+print(format_string('hello', 20))

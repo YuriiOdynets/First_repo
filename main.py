@@ -422,11 +422,11 @@
 #
 #get_fullname('Petro','Zaliznyak')
 
-def format_string(string:str, length:int)->str:
-    if len(string)>=length:
-        return print(string)
+def format_string(string:str, length:int):
+    if len(string)<length:
+        spaces = ' ' * (length - len(string) // 2)
+        return print(spaces + string + spaces)
     else:
-        return ' ' * (length - len(string) // 2) + string + ' ' * (length - len(string) // 2)
+        return print(string)
 
-format_string('hello',20)
-print(format_string)
+format_string('Hello', 20)
