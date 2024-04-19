@@ -43,7 +43,7 @@
 #    print("Invalid input. Please enter valid integer values.")
 #
 ##Task №3
-#
+##Цю версію не прийняли для ДЗ
 #import re
 #
 #def normalize_phone(raw_numbers):
@@ -82,3 +82,4 @@
 #        else:
 #            cleaned_number='+38'+cleaned_number
 #    print(cleaned_number)
+
