@@ -83,3 +83,21 @@
 #            cleaned_number='+38'+cleaned_number
 #    print(cleaned_number)
 
+
+#Task №3
+# Перед видаленням фор функціх у кінці
+import re
+
+def normalize_phone(raw_number):
+    cleaned_number = re.sub(r'\D', '', raw_number)
+    if not cleaned_number.startswith('+38') and not cleaned_number.startswith('380'):
+        cleaned_number = '+38' + cleaned_number
+    else:
+        cleaned_number = '+' + cleaned_number
+    return cleaned_number
+
+raw_numbers = "067\\t123 4567"
+
+#for raw_number in raw_numbers:
+#    normalized_number = normalize_phone(raw_number)
+print(normalize_phone(raw_numbers))
